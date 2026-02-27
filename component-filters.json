@@ -34,6 +34,24 @@
     ]
   },
   {
+    "id": "cards-industry",
+    "components": [
+      "card"
+    ]
+  },
+  {
+    "id": "cards-insight",
+    "components": [
+      "card"
+    ]
+  },
+  {
+    "id": "cards-product",
+    "components": [
+      "card"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
@@ -43,6 +61,21 @@
     "id": "carousel",
     "components": [
       "carousel-item"
+    ]
+  },
+  {
+    "id": "columns-feature",
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
     ]
   },
   {
