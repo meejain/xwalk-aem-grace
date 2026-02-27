@@ -1,9 +1,4 @@
 {
   "type": "xwalk",
-  "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json",
-  "contentHostUrl": "author-p184156-e1934423.adobeaemcloud.com",
-  "aemSitePath": "/content/wrgrace",
-  "aemAssetsFolderPath": "/content/dam/wrgrace",
-  "aemSiteName": "wrgrace",
-  "aemSiteTitle": "WR Grace"
+  "contentHostUrl": "author-p184156-e1934423.adobeaemcloud.com"
 }
