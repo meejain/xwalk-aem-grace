@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-feature",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-02-27T20:42:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://grace.com/",
+    "originPage": "Grace homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "feature-columns",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + paragraph + CTA button per column",
+    "buttonCount": 2,
+    "imageCount": 2
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "two-column feature sections with image + text + CTA",
+      "side-by-side promotional content",
+      "people/careers highlight sections"
+    ],
+    "notSuitableFor": [
+      "text-only columns",
+      "three-column layouts",
+      "columns with complex nested content"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-02-27T20:42:00.000Z"
+  }
+}

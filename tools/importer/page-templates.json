@@ -1,0 +1,132 @@
+{
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://grace.com/"
+      ],
+      "description": "Grace homepage — main landing page with company overview and key content areas",
+      "blocks": [
+        {
+          "name": "hero-banner",
+          "instances": [
+            "div.generic-hero"
+          ]
+        },
+        {
+          "name": "cards-product",
+          "instances": [
+            "section:has(article.m-p-t-sm) .card"
+          ]
+        },
+        {
+          "name": "columns-feature",
+          "instances": [
+            "section:has(> article > .row > .col-lg-6 > .section > section.white-bkgd)"
+          ]
+        },
+        {
+          "name": "cards-industry",
+          "instances": [
+            "section.background-image .cmp-card-list .card"
+          ]
+        },
+        {
+          "name": "embed-video",
+          "instances": [
+            "div.cmp-media-callout.slate-bkgd"
+          ]
+        },
+        {
+          "name": "cards-insight",
+          "instances": [
+            "section#blogs .media-callout"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero",
+          "selector": "div.generic-hero",
+          "style": null,
+          "blocks": [
+            "hero-banner"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "About Grace Promo",
+          "selector": "section#aboutgrace",
+          "style": "light-gray",
+          "blocks": [],
+          "defaultContent": [
+            "section#aboutgrace .cmp-card-list .card .h2.title",
+            "section#aboutgrace .cmp-card-list .card .cta"
+          ]
+        },
+        {
+          "id": "section-3",
+          "name": "Products",
+          "selector": [
+            "section:has(> article.m-p-t-md > .row > .col-lg-12 > .rich-text > h2)",
+            "section:has(article.m-p-t-sm > .row > .col-lg-3 > .card)"
+          ],
+          "style": null,
+          "blocks": [
+            "cards-product"
+          ],
+          "defaultContent": [
+            "div.rich-text h2"
+          ]
+        },
+        {
+          "id": "section-4",
+          "name": "People and Careers",
+          "selector": "section:has(> article > .row > .col-lg-6 > .section > section.white-bkgd)",
+          "style": null,
+          "blocks": [
+            "columns-feature"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5",
+          "name": "Industries",
+          "selector": "section.background-image:has(.card-list)",
+          "style": "background-image",
+          "blocks": [
+            "cards-industry"
+          ],
+          "defaultContent": [
+            "div.rich-text h3"
+          ]
+        },
+        {
+          "id": "section-6",
+          "name": "Video Callout",
+          "selector": "section:has(.cmp-media-callout.slate-bkgd)",
+          "style": "dark",
+          "blocks": [
+            "embed-video"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-7",
+          "name": "Insights from Grace",
+          "selector": "section#blogs",
+          "style": "light-gray",
+          "blocks": [
+            "cards-insight"
+          ],
+          "defaultContent": [
+            "section#blogs > article > h2",
+            "section#allblogs .button a"
+          ]
+        }
+      ]
+    }
+  ]
+}
