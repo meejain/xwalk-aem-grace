@@ -437,7 +437,11 @@ main .section.background-image a.button.primary:focus-visible {
 /* light-gray section - large statement paragraphs (intro style) */
 main .section.light-gray > .default-content-wrapper > p:not(.button-wrapper),
 main .section.light > .default-content-wrapper > p:not(.button-wrapper),
-main .section.highlight > .default-content-wrapper > p:not(.button-wrapper) {
+main .section.highlight > .default-content-wrapper > p:not(.button-wrapper),
+/* xwalk: text components are wrapped in an extra div */
+main .section.light-gray > .default-content-wrapper > div > p:not(.button-wrapper),
+main .section.light > .default-content-wrapper > div > p:not(.button-wrapper),
+main .section.highlight > .default-content-wrapper > div > p:not(.button-wrapper) {
   font-family: var(--heading-font-family);
   font-size: var(--heading-font-size-xl);
   font-weight: 300;
