@@ -111,6 +111,16 @@ function decorateButtons(main) {
       em.replaceWith(a);
     }
   });
+
+  // Handle xwalk button components (Universal Editor)
+  // These render as <p data-aue-model="button"><a>...</a></p> without <strong> wrapping
+  main.querySelectorAll('p[data-aue-model="button"] a[href]').forEach((a) => {
+    if (a.classList.contains('button')) return; // already decorated
+    const p = a.closest('p');
+    a.title = a.title || a.textContent;
+    p.classList.add('button-wrapper');
+    a.classList.add('button', 'primary');
+  });
 }
 
 /**
