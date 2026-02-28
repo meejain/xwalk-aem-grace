@@ -401,6 +401,39 @@ main .section.dark a:hover {
   color: var(--accent-color);
 }
 
+/* background-image section (industries) - dark overlay with white text */
+main .section.background-image {
+  background-color: var(--dark-color);
+  color: var(--white);
+  margin: 0;
+  padding: var(--spacing-l) 0;
+}
+
+main .section.background-image h1,
+main .section.background-image h2,
+main .section.background-image h3,
+main .section.background-image h4,
+main .section.background-image h5,
+main .section.background-image h6 {
+  color: var(--white);
+}
+
+main .section.background-image p {
+  color: var(--white);
+}
+
+/* white button in background-image section */
+main .section.background-image a.button.primary {
+  background-color: var(--white);
+  color: var(--text-color);
+}
+
+main .section.background-image a.button.primary:hover,
+main .section.background-image a.button.primary:focus-visible {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
 /* light-gray section - large statement paragraphs (intro style) */
 main .section.light-gray > .default-content-wrapper > p:not(.button-wrapper),
 main .section.light > .default-content-wrapper > p:not(.button-wrapper),
