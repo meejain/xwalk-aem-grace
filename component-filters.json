@@ -11,12 +11,19 @@
       "accordion",
       "button",
       "cards",
+      "cards-industry",
+      "cards-insight",
+      "cards-product",
       "carousel",
       "columns",
+      "columns-feature",
+      "columns-people",
       "embed",
+      "embed-video",
       "fragment",
       "form",
       "hero",
+      "hero-banner",
       "image",
       "quote",
       "search",
@@ -65,6 +72,12 @@
   },
   {
     "id": "columns-feature",
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "columns-people",
     "components": [
       "column"
     ]

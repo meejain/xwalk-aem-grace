@@ -1,5 +1,5 @@
-// eslint-disable-next-line no-unused-vars
 export default function decorate(block) {
-  // Hero banner block - no additional JS decoration needed
-  // Background image and text styling handled via CSS
+  if (!block.querySelector(':scope > div:first-child picture') && !block.querySelector(':scope > div:first-child img')) {
+    block.classList.add('no-image');
+  }
 }

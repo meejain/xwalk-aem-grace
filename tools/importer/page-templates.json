@@ -20,7 +20,7 @@
           ]
         },
         {
-          "name": "columns-feature",
+          "name": "columns-people",
           "instances": [
             "section:has(> article > .row > .col-lg-6 > .section > section.white-bkgd)"
           ]
@@ -87,7 +87,7 @@
           "selector": "section:has(> article > .row > .col-lg-6 > .section > section.white-bkgd)",
           "style": null,
           "blocks": [
-            "columns-feature"
+            "columns-people"
           ],
           "defaultContent": []
         },

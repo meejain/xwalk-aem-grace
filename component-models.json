@@ -136,6 +136,18 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "Light Gray",
+            "value": "light-gray"
+          },
+          {
+            "name": "Dark",
+            "value": "dark"
+          },
+          {
+            "name": "Background Image",
+            "value": "background-image"
           }
         ]
       }
@@ -282,6 +294,25 @@
     ]
   },
   {
+    "id": "columns-people",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "columns",
+        "value": "",
+        "label": "Columns"
+      },
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "rows",
+        "value": "",
+        "label": "Rows"
+      }
+    ]
+  },
+  {
     "id": "columns",
     "fields": [
       {
@@ -306,22 +337,23 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "embed_placeholder",
+        "name": "image",
         "label": "Placeholder Image",
         "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "embed_placeholderAlt",
+        "name": "imageAlt",
         "value": "",
         "label": "Placeholder Image Alt Text"
       },
       {
-        "component": "text",
-        "valueType": "string",
-        "name": "embed_uri",
-        "label": "URI"
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Content",
+        "valueType": "string"
       }
     ]
   },
@@ -331,22 +363,23 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "embed_placeholder",
+        "name": "image",
         "label": "Placeholder Image",
         "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "embed_placeholderAlt",
+        "name": "imageAlt",
         "value": "",
         "label": "Placeholder Image Alt Text"
       },
       {
-        "component": "text",
-        "valueType": "string",
-        "name": "embed_uri",
-        "label": "URI"
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Content",
+        "valueType": "string"
       }
     ]
   },
