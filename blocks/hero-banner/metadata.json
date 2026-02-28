@@ -2,10 +2,10 @@
   "variantName": "hero-banner",
   "baseBlock": "hero",
   "version": "1.0.0",
-  "created": "2026-02-27T20:42:00.000Z",
+  "created": "2026-02-26T15:27:00.000Z",
   "sourceContext": {
     "originUrl": "https://grace.com/",
-    "originPage": "Grace homepage",
+    "originPage": "homepage",
     "blockPosition": "top"
   },
   "visualCharacteristics": {
@@ -15,25 +15,24 @@
     "imagePattern": "large"
   },
   "contentPattern": {
-    "structure": "background image + heading + CTA button",
+    "structure": "background-image + heading + CTA",
     "buttonCount": 1,
     "imageCount": 1
   },
   "reuseGuidance": {
     "suitableFor": [
-      "homepage hero sections",
+      "homepage hero banners",
       "landing pages with background images",
-      "full-width banner sections with CTA"
+      "marketing pages with single CTA"
     ],
     "notSuitableFor": [
       "text-only hero sections",
-      "hero sections with multiple images",
-      "hero sections without background images"
+      "hero sections with multiple images"
     ]
   },
   "usage": {
     "pagesUsing": ["content/index"],
     "reuseCount": 1,
-    "lastUsed": "2026-02-27T20:42:00.000Z"
+    "lastUsed": "2026-02-26T15:27:00.000Z"
   }
 }

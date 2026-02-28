@@ -2,38 +2,37 @@
   "variantName": "cards-insight",
   "baseBlock": "cards",
   "version": "1.0.0",
-  "created": "2026-02-27T20:42:00.000Z",
+  "created": "2026-02-26T15:27:00.000Z",
   "sourceContext": {
     "originUrl": "https://grace.com/",
-    "originPage": "Grace homepage",
+    "originPage": "homepage",
     "blockPosition": "bottom"
   },
   "visualCharacteristics": {
     "colorScheme": "light",
     "density": "spacious",
-    "purpose": "blog-article-cards",
+    "purpose": "blog-articles",
     "imagePattern": "large"
   },
   "contentPattern": {
-    "structure": "image + category tag + linked title + read more link",
-    "buttonCount": 1,
+    "structure": "image + category + title + read-more-link",
+    "buttonCount": 0,
     "imageCount": 4
   },
   "reuseGuidance": {
     "suitableFor": [
-      "blog article listing sections",
-      "news/insights grids",
-      "content with category tags and read more links"
+      "blog article listings",
+      "news and insights cards",
+      "content with category tags and read-more links"
     ],
     "notSuitableFor": [
       "product cards without categories",
-      "simple image + text cards",
-      "cards without links"
+      "simple image + title navigation cards"
     ]
   },
   "usage": {
     "pagesUsing": ["content/index"],
     "reuseCount": 1,
-    "lastUsed": "2026-02-27T20:42:00.000Z"
+    "lastUsed": "2026-02-26T15:27:00.000Z"
   }
 }

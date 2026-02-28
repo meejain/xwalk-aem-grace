@@ -1,20 +1,7 @@
 /*
  * Embed Video Block
- * Show videos and social posts directly on your page
- * https://www.hlx.live/developer/block-collection/embed
+ * Show videos directly on your page
  */
-
-const loadScript = (url, callback, type) => {
-  const head = document.querySelector('head');
-  const script = document.createElement('script');
-  script.src = url;
-  if (type) {
-    script.setAttribute('type', type);
-  }
-  script.onload = callback;
-  head.append(script);
-  return script;
-};
 
 const getDefaultEmbed = (url) => `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
     <iframe src="${url.href}" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen=""
@@ -49,15 +36,6 @@ const embedVimeo = (url, autoplay) => {
   return embedHTML;
 };
 
-const embedTwitter = (url) => {
-  if (!url.href.startsWith('https://twitter.com')) {
-    url.href = url.href.replace('https://x.com', 'https://twitter.com');
-  }
-  const embedHTML = `<blockquote class="twitter-tweet"><a href="${url.href}"></a></blockquote>`;
-  loadScript('https://platform.twitter.com/widgets.js');
-  return embedHTML;
-};
-
 const loadEmbed = (block, link, autoplay) => {
   if (block.classList.contains('embed-video-is-loaded')) {
     return;
@@ -71,10 +49,6 @@ const loadEmbed = (block, link, autoplay) => {
     {
       match: ['vimeo'],
       embed: embedVimeo,
-    },
-    {
-      match: ['twitter', 'x.com'],
-      embed: embedTwitter,
     },
   ];
   const config = EMBEDS_CONFIG.find((e) => e.match.some((match) => link.includes(match)));

@@ -1,6 +1,6 @@
 {
-  "variantName": "cards-product",
-  "baseBlock": "cards",
+  "variantName": "columns-people",
+  "baseBlock": "columns",
   "version": "1.0.0",
   "created": "2026-02-26T15:27:00.000Z",
   "sourceContext": {
@@ -11,23 +11,23 @@
   "visualCharacteristics": {
     "colorScheme": "light",
     "density": "spacious",
-    "purpose": "product-showcase",
+    "purpose": "people-culture",
     "imagePattern": "large"
   },
   "contentPattern": {
-    "structure": "image + title + description",
-    "buttonCount": 0,
-    "imageCount": 4
+    "structure": "image + text + CTA | image + text + CTA",
+    "buttonCount": 2,
+    "imageCount": 2
   },
   "reuseGuidance": {
     "suitableFor": [
-      "product category listings",
-      "feature showcases with images",
-      "service offering grids"
+      "two-column layouts with image + text + CTA",
+      "people and culture sections",
+      "side-by-side promotional content"
     ],
     "notSuitableFor": [
-      "text-only card listings",
-      "blog article cards with categories"
+      "text-only columns",
+      "columns with more than 2 items"
     ]
   },
   "usage": {

@@ -6,7 +6,7 @@ import heroBannerParser from './parsers/hero-banner.js';
 import cardsProductParser from './parsers/cards-product.js';
 import cardsIndustryParser from './parsers/cards-industry.js';
 import cardsInsightParser from './parsers/cards-insight.js';
-import columnsFeatureParser from './parsers/columns-feature.js';
+import columnsPeopleParser from './parsers/columns-people.js';
 import embedVideoParser from './parsers/embed-video.js';
 
 // TRANSFORMER IMPORTS - Import all transformers from tools/importer/transformers/
@@ -19,7 +19,7 @@ const parsers = {
   'cards-product': cardsProductParser,
   'cards-industry': cardsIndustryParser,
   'cards-insight': cardsInsightParser,
-  'columns-feature': columnsFeatureParser,
+  'columns-people': columnsPeopleParser,
   'embed-video': embedVideoParser,
 };
 
@@ -40,7 +40,7 @@ const PAGE_TEMPLATE = {
       instances: ['section:has(article.m-p-t-sm) .card'],
     },
     {
-      name: 'columns-feature',
+      name: 'columns-people',
       instances: ['section:has(> article > .row > .col-lg-6 > .section > section.white-bkgd)'],
     },
     {
@@ -92,7 +92,7 @@ const PAGE_TEMPLATE = {
       name: 'People and Careers',
       selector: 'section:has(> article > .row > .col-lg-6 > .section > section.white-bkgd)',
       style: null,
-      blocks: ['columns-feature'],
+      blocks: ['columns-people'],
       defaultContent: [],
     },
     {

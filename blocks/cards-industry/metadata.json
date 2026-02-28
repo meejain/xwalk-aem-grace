@@ -2,38 +2,37 @@
   "variantName": "cards-industry",
   "baseBlock": "cards",
   "version": "1.0.0",
-  "created": "2026-02-27T20:42:00.000Z",
+  "created": "2026-02-26T15:27:00.000Z",
   "sourceContext": {
     "originUrl": "https://grace.com/",
-    "originPage": "Grace homepage",
+    "originPage": "homepage",
     "blockPosition": "middle"
   },
   "visualCharacteristics": {
     "colorScheme": "light",
     "density": "compact",
     "purpose": "industry-navigation",
-    "imagePattern": "icon"
+    "imagePattern": "large"
   },
   "contentPattern": {
-    "structure": "thumbnail image + linked industry name",
-    "buttonCount": 1,
+    "structure": "image + linked-title",
+    "buttonCount": 0,
     "imageCount": 6
   },
   "reuseGuidance": {
     "suitableFor": [
-      "industry navigation grids",
-      "category browsing with thumbnails",
-      "small compact card grids with icons"
+      "industry or category navigation grids",
+      "linked image tiles with titles",
+      "compact card grids without descriptions"
     ],
     "notSuitableFor": [
-      "detailed content cards",
-      "blog article cards",
-      "full-size image cards"
+      "cards with long descriptions",
+      "product showcases needing detailed text"
     ]
   },
   "usage": {
     "pagesUsing": ["content/index"],
     "reuseCount": 1,
-    "lastUsed": "2026-02-27T20:42:00.000Z"
+    "lastUsed": "2026-02-26T15:27:00.000Z"
   }
 }
